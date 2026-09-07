@@ -224,6 +224,16 @@ DELETE http://localhost:8080/dealer/{id}
 ```
 
 ---
+# Swagger / OpenAPI
+
+A API possui documentação interativa através do Swagger UI.
+
+Com a aplicação em execução, acesse:
+
+```text
+http://localhost:8080/swagger-ui/index.html
+```
+---
 
 # PostgreSQL
 
