@@ -1,6 +1,8 @@
 spring:
   application:
     name: drivecore-api
+  profiles:
+    active: homologacao
   output:
     ansi:
       enabled: ALWAYS
@@ -32,3 +34,27 @@ management:
     web:
       exposure:
         include: '*'
+
+# production
+---
+spring:
+  config:
+    activate:
+      on-profile: homologacao
+  jpa:
+    show-sql: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drivecore-hml
+    username: postgres
+    password: 150366
+
+# production
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+  jpa:
+    show-sql: false
+
+
