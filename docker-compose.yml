@@ -1,0 +1,59 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: drivecore-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: drivecore
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 150366
+
+    ports:
+      - "5436:5432"
+
+    volumes:
+      - drivecore-postgres-data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres -d drivecore" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+    networks:
+      - drivecore-network
+
+
+  drivecore-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: drivecore-api
+    restart: unless-stopped
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/drivecore
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 150366
+
+    ports:
+      - "8080:8080"
+
+    networks:
+      - drivecore-network
+
+
+volumes:
+  drivecore-postgres-data:
+
+
+networks:
+  drivecore-network:
+    driver: bridge

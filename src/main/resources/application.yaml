@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: drivecore-api
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drivecore
+    username: postgres
+    password: 150366
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+logging:
+  file:
+    name: app.log
+  level:
+    root: warn
+    io:
+      romulogomesbsi: trace
+    org:
+      springframework:
+        web: debug
