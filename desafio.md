@@ -427,62 +427,62 @@ Entretanto, espera-se que o candidato tenha **conhecimento sobre todo o código 
 
 ### Backend
 
-* [ ] Java 21
-* [ ] Spring Boot
-* [ ] Maven
-* [ ] JPA / Hibernate
-* [ ] API REST
-* [ ] CRUD de veículos
-* [ ] CRUD de concessionárias
-* [ ] Associação veículo ↔ concessionária
-* [ ] DTOs
-* [ ] Service Layer
-* [ ] Validações
-* [ ] Tratamento de exceções
-* [ ] Logs
-* [ ] Swagger / OpenAPI
+* [x] Java 21
+* [x] Spring Boot
+* [x] Maven
+* [x] JPA / Hibernate
+* [x] API REST
+* [x] CRUD de veículos
+* [x] CRUD de concessionárias
+* [x] Associação veículo ↔ concessionária
+* [x] DTOs
+* [x] Service Layer
+* [x] Validações
+* [x] Tratamento de exceções
+* [x] Logs
+* [x] Swagger / OpenAPI
 
 ### Frontend
 
-* [ ] React
-* [ ] TypeScript
-* [ ] Vite ou Next.js
+* [x] React
+* [x] TypeScript
+* [x] Vite ou Next.js
 * [ ] TanStack Query
-* [ ] React Hook Form
-* [ ] Zod ou Yup
-* [ ] React Router
-* [ ] Listagem de veículos
-* [ ] Cadastro de veículos
-* [ ] Edição de veículos
-* [ ] Exclusão de veículos
-* [ ] Listagem de concessionárias
-* [ ] Cadastro de concessionárias
-* [ ] Edição de concessionárias
-* [ ] Exclusão de concessionárias
-* [ ] Associação de veículos
-* [ ] Loading states
-* [ ] Tratamento de erros
-* [ ] Validação client-side
+* [x] React Hook Form
+* [x] Zod ou Yup
+* [x] React Router
+* [x] Listagem de veículos
+* [x] Cadastro de veículos
+* [x] Edição de veículos
+* [x] Exclusão de veículos
+* [x] Listagem de concessionárias
+* [x] Cadastro de concessionárias
+* [x] Edição de concessionárias
+* [x] Exclusão de concessionárias
+* [x] Associação de veículos
+* [x] Loading states
+* [x] Tratamento de erros
+* [x] Validação client-side
 
 ### Diferenciais
 
-* [ ] Docker
-* [ ] Docker Compose
+* [x] Docker
+* [x] Docker Compose
 * [ ] Testes unitários
-* [ ] Integração ViaCEP
-* [ ] AWS
-* [ ] Observabilidade
-* [ ] Logs estruturados
-* [ ] Deploy
+* [x] Integração ViaCEP
+* [x] AWS
+* [x] Observabilidade
+* [x] Logs estruturados
+* [x] Deploy
 
 ### Entrega
 
-* [ ] Repositório público no GitHub
-* [ ] README
-* [ ] Instruções de execução
-* [ ] Desenho da arquitetura
+* [x] Repositório público no GitHub
+* [x] README
+* [x] Instruções de execução
+* [x] Desenho da arquitetura
 * [ ] Scripts de banco
-* [ ] Documentação da API
+* [x] Documentação da API
 
 ---
 
